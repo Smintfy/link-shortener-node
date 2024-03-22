@@ -29,17 +29,17 @@
 
 ## To-do
 - **Core**
-  - [ ] Database (MongoDB or Supabase).
+  - [ ] Database (MongoDB or Supabase)
 
 - **API Endpoints**
-  - [ ] `POST` Create a new short URL.
-  - [ ] `GET` Redirect short URL to original URL.
-  - [ ] `PUT` Update an existing URL.
-  - [ ] `DELETE` Delete an URL.
-
+  - [x] `POST` Create a new short Link
+  - [x] `GET` Redirect short Link to URL
+  - [ ] `PUT` Update an existing URL
+  - [x] `DELETE` Delete an URL
+        
 - **Features**
   - [ ] Customization and URL preview.
-  - [ ] Analytics.
+  - [ ] Analytics and overview
 
 ## API examples
 1. `POST`
