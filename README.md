@@ -18,8 +18,18 @@
     ```bash
     npm start
    ```
+5. Currently we are just working with a mock database with JSON so we can play around and explore freely. **To configure the JSON database** all you need to do is **rename** `db.example.json` in `src/core/` to `db.json`
+
+6. Configure environment `.env`
+   
+   ```bash
+    PORT=YOUR_PORT
+    JSON_PATH='src/core/'
+   ```
 
 ## To-do
+- **Core**
+  - [ ] Database (MongoDB or Supabase).
 
 - **API Endpoints**
   - [ ] `POST` Create a new short URL.
