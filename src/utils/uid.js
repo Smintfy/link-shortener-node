@@ -1,6 +1,6 @@
 const buffer = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-export function uid(size = 8) {
+export function uid(size = 7) {
     let id = "";
     let random = crypto.getRandomValues(new Uint8Array(size));
 
