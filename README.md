@@ -5,12 +5,12 @@
 1. Clone the repository
    
    ```bash
-    git clone https://github.com/Smintfy/url-shortener-node.git
+    git clone https://github.com/Smintfy/link-shortener-node.git
    ```
 3. Install the depenencies
    
    ```bash
-    cd url-shortener-backend
+    cd link-shortener-node
     npm install
    ```
 4. Run the development server
