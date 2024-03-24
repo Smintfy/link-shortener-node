@@ -9,7 +9,7 @@ const linkSchema = new Schema({
     },
     url: {
         type: String,
-        required: true,
+        required: [true, "Please provide the URL destination."],
         description: "The URL destination for the short link.",
     },
     shortLink: {
