@@ -1,16 +1,15 @@
 import jwt from "jsonwebtoken";
 
 export default async (req, res, next) => {
-    let token;
+    // extract token from authorization header
+    const authHeader = req.headers.authorization;
 
-    // extract token from Authorization header
-    if (req.headers.authorization && req.headers.authorization.startsWith("Bearer")) {
-        token = req.headers.authorization.split(" ")[1];
-    }
-
-    if (!token) {
+    // check authorization header
+    if (!authHeader || !authHeader.startsWith("Bearer")) {
         return res.status(401).json({ msg: "Unauthorized access" });
     }
+
+    const token = req.headers.authorization.split(" ")[1];
 
     try {
         jwt.verify(token, process.env.JWT_SECRET, (error, decoded) => {
