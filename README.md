@@ -26,10 +26,10 @@
 
 ## To-do
 - **API**
-   - [ ] API endpoints
+   - [x] API endpoints
    - [x] Auth
-   - [ ] Middleware
-   - [ ] Controller
+   - [x] Middleware
+   - [x] Controller
    - [x] Database
          
 - **Features**
